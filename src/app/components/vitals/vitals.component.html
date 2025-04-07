@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Patient Vitals</h2>
+    <table *ngIf="vitals.length > 0">
+      <thead>
+        <tr>
+          <th>Temperature (°F)</th>
+          <th>Heart Rate (BPM)</th>
+          <th>Blood Pressure</th>
+          <th>Datetime</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vital of vitals">
+          <td>{{ vital.temperature }}</td>
+          <td>{{ vital.heartRate }}</td>
+          <td>{{ vital.bloodPressure }}</td>
+          <td>{{ vital.Datetime }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <p *ngIf="vitals.length === 0">No vitals data available.</p>
+  </div>
+  

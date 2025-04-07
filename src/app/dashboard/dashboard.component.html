@@ -1,0 +1,16 @@
+<!-- dashboard.component.html -->
+
+<div echarts [options]="chartOptions" class="chart-container"></div>
+
+<div class="row">
+
+    <div class="col-md-3" *ngFor="let card of dashboardCards">
+      <nb-card>
+        <nb-card-header>{{ card.title }}</nb-card-header>
+        <nb-card-body>
+          <h2>{{ card.value }}</h2>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+  

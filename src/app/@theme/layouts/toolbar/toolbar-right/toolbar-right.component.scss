@@ -1,0 +1,48 @@
+@use '../../../styles/theme-palette-colors.scss';
+
+
+
+
+
+.dropdown-header,
+.dropdown-body {
+  padding: 16px 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .pc-header {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .pc-header {
+    .header-wrapper {
+      padding: 10px;
+    }
+
+    .pc-head-link {
+      margin: 0px;
+    }
+
+    .header-item {
+      &.mdc-button {
+        min-width: 50px;
+        padding: 0;
+      }
+    }
+
+    .mdc-button {
+      min-width: 0px !important;
+    }
+
+    .mat-drawer-content {
+      .app-container {
+        padding: 15px;
+      }
+    }
+  }
+
+  
+}
